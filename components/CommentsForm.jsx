@@ -38,6 +38,9 @@ const CommentsForm = ({ slug }) => {
           name="email"
         />
       </div>
+      {error && (
+        <p className="text-xs text-red-500">All fields are required.</p>
+      )}
     </div>
   );
 };
